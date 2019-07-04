@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
+	<style type="text/css"> 
+        *{
+        	padding: 0;
+        	color: white;
+        	font-family: 'Noto Sans HK', sans-serif;
+        }
+        body{
+			background: black;
+		}
+		::-webkit-scrollbar{
+			width: 20px;
+			background-color: #000;
+		}
+		::-webkit-scrollbar-thumb{
+			background-color: #fff;
+		    border-radius: 25px;
+		    border: 2px solid #000;
+		}
+		.menu{
+			width: 100px;
+			height: 100px;
+			border: 5px solid #fff;
+			border-radius: 100px;
+			background-color: #ffffff;
+			display: block;
+			margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px; 
+            display: flex;
+            align-content: center;
+			justify-content: center;
+		}
+		i{
+			color: black;
+			margin: 20px 30px;
+		}
+		p{
+			text-align: center;
+			font-size: 20px;
+			margin: 5px;
+		}
+		#buy{
+			display: block;
+            text-align: center;
+			font-size: 17px;
+			border: 2px solid;
+			border-color: #ecf0f1;
+			border-radius: 25px;
+			font-weight: bold;
+			padding: 3px;
+			width: auto;
+			margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+		}
+		#buy0{
+			display: block;
+            text-align: center;
+			font-size: 17px;
+			border: 2px solid;
+			border-color: #ecf0f1;
+			border-radius: 25px;
+			font-weight: bold;
+			padding: 3px;
+			width: auto;
+			margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+		}
+		#buy1{
+			display: block;
+            text-align: center;
+			font-size: 17px;
+			border: 2px solid;
+			border-color: #ecf0f1;
+			border-radius: 25px;
+			font-weight: bold;
+			padding: 3px;
+			width: auto;
+			margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+		}
+		#buy2{
+			display: block;
+            text-align: center;
+			font-size: 17px;
+			border: 2px solid;
+			border-color: #ecf0f1;
+			border-radius: 25px;
+			font-weight: bold;
+			padding: 3px;
+			width: auto;
+			margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+		}
+		#buy:hover{
+			border: 2.5px solid;
+			border-color: #ffffff;
+		}
+		#buy0:hover{
+			border: 2.5px solid;
+			border-color: #ffffff;
+		}
+		#buy1:hover{
+			border: 2.5px solid;
+			border-color: #ffffff;
+		}
+		#buy2:hover{
+			border: 2.5px solid;
+			border-color: #ffffff;
+		}
+		.content{
+			background: #000;
+			max-width: 1100px;
+			border: 5px solid #fff;
+			border-radius: 50px;
+			display: flex;
+			align-content: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin: 30px 50px;
+			padding: 30px 20px;
+			margin-left: auto;
+            margin-right: auto;
+		}
+		.ca{
+		}
+		img{
+			width: 150px;
+			height: 200px;
+			border-radius: 50px;
+			display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 7px;
+		}
+		.buybut{
+			display: block;
+            margin-left: auto;
+            margin-right: auto;
+            background: #000;
+            border: 5px solid #fff;
+			border-radius: 50px;
+			text-align: center;
+			font-size: 40px;
+			width: 100px;
+			padding: 5px 10px;
+			margin-bottom: 20px;
+		}
+		.buybut:hover{
+			background-color: #ffffff;
+			color: #000000;
+		}
+		.box1{
+			width: 200px;
+			height: 300px;
+			background-color: #000;
+			border: 2px solid #fff;
+			border-radius: 50px;
+			margin: 5px 10px;
+			padding: 20px;
+		}
+		.box2{
+			width: 200px;
+			height: 300px;
+			background-color: #000;
+			border: 2px solid #fff;
+			border-radius: 50px;
+			margin: 5px 10px;
+			padding: 20px;
+		}
+		.box3{
+			width: 200px;
+			height: 300px;
+			background-color: #000;
+			border: 2px solid #fff;
+			border-radius: 50px;
+			margin: 5px 10px;
+			padding: 20px;
+		}
+		.box4{
+			width: 200px;
+			height: 300px;
+			background-color: #000;
+			border: 2px solid #fff;
+			border-radius: 50px;
+			margin: 5px 10px;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		var boxone = false;
+        var boxtwo = false;
+        var boxthree = false;
+        var boxfour = false;
+        function one(){
+        	boxone = true;
+        }
+        function two(){
+        	boxtwo = true;
+        }
+        function three(){
+        	boxthree = true;
+        }
+        function four(){
+        	boxfour = true;
+        }
+        function notify(){
+        	alert("That is not a real site. You can contact developer.");
+        }
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+            $(".menu").on('mouseover', function(){
+            	$(this).animate({ width: "325px" }, 'fast');
+            });
+
+            $(".menu").mouseleave(function() {
+                $(this).animate({ width: "100px" }, 'fast');
+            });
+
+            $(".buybut").hide();
+
+            $(".ca").on('click', function(){
+            	$(".buy").hide();
+            	$(".buy0").hide();
+            	$(".buy1").hide();
+            	$(".buy2").hide();
+            	$(".buybut").show();
+
+                if(boxone == false){
+                    $(".box1").hide();
+                }else{
+                    $(".box1").show();
+                }  
+                if(boxtwo == false){
+                    $(".box2").hide();
+                }else{
+                    $(".box2").show();
+                }
+                if(boxthree == false){
+                    $(".box3").hide();
+                }else{
+                    $(".box3").show();
+                }
+                if(boxfour == false){
+                    $(".box4").hide();
+                }else{
+                    $(".box4").show();
+                } 
+            });
+
+		});
+	</script>
+	<div class="menu">
+		<div class="ca"><i class="fa fa-shopping-cart  fa-3x" aria-hidden="true"></i></div>
+		<a href="flex.html"><i class="fa fa-home  fa-3x" aria-hidden="true"></i></a>
+		<a href="contact.html"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+	</div>
+	<div class="content">
+	    <div class="box1"><p>Watches CIVO</p><img src="https://images-na.ssl-images-amazon.com/images/I/71RJ6Rk8gQL._UX522_.jpg" /><div id="buy" onclick="one()">Add to cart</div></div>
+	    <div class="box2"><p>Fossil</p><img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/9038003/2019/4/16/0c3c31e8-826b-4387-9449-c91847a0e5f81555411750312-Fossil-Men-Black-Analogue-Watch-6841555411749766-1.jpg" /><div id="buy0" onclick="two()">Add to cart</div></div>
+	    <div class="box3"><p>Rosefield</p><img src="https://imagescdn.simons.ca/images/12153/5021/91/A1_3.jpg?__=6" /><div id="buy1" onclick="three()">Add to cart</div></div>
+	    <div class="box4"><p>Guess</p><img src="https://slimages.macysassets.com/is/image/MCY/products/1/optimized/8634191_fpx.tif?op_sharpen=1&wid=500&hei=613&fit=fit,1&$filtersm$" /><div id="buy2" onclick="four()">Add to cart</div></div>
+    </div>
+    <div class="buybut" onclick="notify()">BUY</div>
+</body>
+</html>

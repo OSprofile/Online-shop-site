@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
+	<style type="text/css"> 
+        *{
+        	padding: 0;
+        	color: white;
+        	font-family: 'Noto Sans HK', sans-serif;
+        }
+        body{
+			background: black;
+		}
+		.menu{
+			width: 100px;
+			height: 100px;
+			border: 5px solid #fff;
+			border-radius: 100px;
+			background-color: #ffffff;
+			display: block;
+			margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px; 
+            margin-bottom: 15px;
+            display: flex;
+            align-content: center;
+			justify-content: center;
+		}
+		::-webkit-scrollbar{
+			width: 20px;
+			background-color: #000;
+		}
+		::-webkit-scrollbar-thumb{
+			background-color: #fff;
+		    border-radius: 25px;
+		    border: 2px solid #000;
+		}
+		i{
+			color: black;
+			margin: 20px 30px;
+		}
+		.content{
+			max-width: 500px;
+			background-color: #000000;
+			border: 5px solid #ffffff;
+			border-radius: 50px;
+            display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-content: left;
+			margin: 0px 50px;
+			padding: 30px 20px;
+			margin-left: auto;
+            margin-right: auto;
+		}
+		p{
+			color: #000000;
+			font-size: 25px;
+		}
+		.p0{
+		}
+		.p1{
+		}
+		.p2{
+		}
+		.gmail{
+			width: 100px;
+			height: 100px;
+			border: 5px solid #ffffff;
+			border-radius: 100px;
+			background-color: #ffffff;
+			display: inline-flex;
+			margin: 10px 0px;
+		}
+		.instagram{
+			width: 100px;
+			height: 100px;
+			border: 5px solid #ffffff;
+			border-radius: 100px;
+			background-color: #ffffff;
+			display: inline-flex;
+			margin: 10px 0px;
+		}
+		.facebook{
+			width: 100px;
+			height: 100px;
+			border: 5px solid #ffffff;
+			border-radius: 100px;
+			background-color: #ffffff;
+			display: inline-flex;
+			margin: 10px 0px;
+		}
+		a {
+        color: #000000;
+        text-decoration: none;
+        }
+        
+        a:link {
+        color: #000000;
+        text-decoration: none;
+        }
+        a:visited {
+        color: #000000;
+        text-decoration: none;
+        }
+        a:hover {
+        color: #000000;
+        text-decoration: none;
+        }
+	</style>
+</head>
+<body>
+	<script src="flex.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+            $(".menu").on('mouseover', function(){
+            	$(this).animate({ width: "325px" }, 'fast');
+            });
+
+            $(".menu").mouseleave(function() {
+                $(this).animate({ width: "100px" }, 'fast');
+            });
+
+            $(".p0").hide();
+
+            $(".p1").hide();
+
+            $(".p2").hide();
+
+            $(".gmail").on('click', function(){
+            	$(".p0").show();
+                $(this).animate({ left: "+=200px" }, 'slow');
+                $(this).animate({ width: "450px" }, 'fast');
+            });
+
+            $(".instagram").on('click', function(){
+            	$(".p1").show();
+                $(this).animate({ left: "+=200px" }, 'slow');
+                $(this).animate({ width: "250px" }, 'fast');
+            });
+
+            $(".facebook").on('click', function(){
+            	$(".p2").show();
+                $(this).animate({ left: "+=200px" }, 'slow');
+                $(this).animate({ width: "250px" }, 'fast');
+            });
+
+		});
+	</script>
+	<div class="menu">
+		<i class="fa fa-shopping-cart  fa-3x" aria-hidden="true"></i>
+		<a href="flex.html"><i class="fa fa-home  fa-3x" aria-hidden="true"></i></a>
+		<a href="contact.html"><i class="fa fa-envelope-open  fa-3x" aria-hidden="true"></i></a>
+	</div>
+	<div class="content">
+		<div class="gmail"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i><div class="p0"><p>superolegsirbu@gmail.com</p></div></div>
+        <div class="instagram"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i><a href="https://www.instagram.com/os_profile/?hl=en"><div class="p1"><p>&nbsp;OS_profile</p></div></a></div>
+        <div class="facebook"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i><a href="https://www.facebook.com/profile.php?id=100015729038686"><div class="p2"><p>&nbsp;Lego Lego</p></div></a></div>
+	</div>
+</body>
+</html>
